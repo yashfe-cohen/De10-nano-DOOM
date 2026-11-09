@@ -31,3 +31,21 @@ make -C sim test     # run every testbench; must print PASS for each
 
 Game data (`*.wad`) is downloaded by `scripts/get_freedoom.sh` and never
 committed. Start with `docs/PLAN.md`.
+
+## Licence
+
+Our own RTL, C code and scripts are released under the GNU General Public
+License, version 2 or (at your option) any later version
+(`GPL-2.0-or-later`) — see [LICENSE](LICENSE). Every source file starts with an
+`SPDX-License-Identifier: GPL-2.0-or-later` line.
+
+Third-party parts keep their own licences:
+
+| Part | Licence |
+|---|---|
+| [`doomgeneric`](https://github.com/ozkl/doomgeneric) engine (`sw/doom/` submodule) | GPL-2.0 |
+| Freedoom Phase 1 game data (`freedoom1.wad`, downloaded, never committed) | BSD-style, see `COPYING.txt` in the Freedoom release |
+| [`riscv-tests`](https://github.com/riscv-software-src/riscv-tests) (`sw/tests/isa/` submodule) | BSD-3-Clause |
+
+The Doom firmware links `doomgeneric`, so the firmware image as a whole is
+GPL-2.0; the complete corresponding source stays in this repository.

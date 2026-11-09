@@ -11,5 +11,8 @@ Short version of the rules:
 - Verilog-2001 only. One module per file, <= 200 lines (aim for 120). `default_nettype none`.
 - Every RTL module has a self-checking Icarus testbench printing `PASS tb_<name>` / `FAIL tb_<name>`.
 - `make -C sim test` must pass before every commit. Never weaken a test.
+- Our code is GPL-2.0-or-later: every new source file starts with an
+  `SPDX-License-Identifier: GPL-2.0-or-later` line (`//` in Verilog and C, `#`
+  in shell, Make and Python).
 - [HW] tasks: write instructions in `docs/hw_checkpoints/`, then stop and ask the human.
 - Never commit `*.wad`, Quartus build folders, or generated binaries.

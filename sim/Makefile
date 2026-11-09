@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
 # sim/Makefile -- build and run the Icarus Verilog testbenches.
 #
 #   make -C sim test             run every sim/tb_*.v (exits non-zero on any
