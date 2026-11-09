@@ -1,0 +1,22 @@
+# Game data: fetched by scripts/get_freedoom.sh, never committed.
+*.wad
+/data/
+
+# Generated software images.
+*.bin
+*.elf
+*.hex
+# The boot ROM image is a hand-checked source artefact, so keep it.
+!sw/boot/boot_rom.hex
+
+# Simulation output.
+*.vcd
+sim/build/
+
+# Quartus build output.
+quartus/db/
+quartus/incremental_db/
+quartus/output_files/
+quartus/qsys/soc_hps/
+*.rbf
+*.sof
