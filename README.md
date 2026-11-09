@@ -29,8 +29,10 @@ Verilog on the Terasic DE10-Nano, with HDMI video and audio.
 make -C sim test     # run every testbench; must print PASS for each
 ```
 
-Game data (`*.wad`) is downloaded by `scripts/get_freedoom.sh` and never
-committed. Start with `docs/PLAN.md`.
+Game data (`*.wad`) is never committed: `scripts/get_freedoom.sh` downloads
+Freedoom Phase 1 (Freedoom 0.13.0, a 28.8 MB `freedoom1.wad`) into the
+git-ignored `data/` and prints its size and SHA-256. Start with
+`docs/PLAN.md`.
 
 ## Licence
 

@@ -37,7 +37,8 @@ Update this file at the end of every task (see `docs/PLAN.md` section 0).
 | T0.0 | 2026-11-09 | done | Plan written (`docs/PLAN.md`). |
 | T0.1 | 2026-11-09 | done | Repo skeleton: section-5 directory tree, `.gitignore`, `sim/Makefile` (zero-testbenches run exits 0), README rewritten in UTF-8. |
 | T0.1a | 2026-11-09 | done | Licence decision from the human: `LICENSE` (GPL-2.0 text), SPDX headers, README licence section, `AGENTS.md` rule. A second commit under T0.1, because the licence answer arrived after T0.1 had closed. |
-| T0.2 | T0.2 | 2026-11-09 | done | `scripts/check_tools.sh` (versions of iverilog/vvp/python3/RISC-V GCC/ARM GCC plus the `rv32im/ilp32` multilib, exit 1 when anything is missing) and `docs/tools.md` (apt, xPack and no-root Icarus install commands; verified `-march=rv32im -mabi=ilp32` bare and newlib links). |
+| T0.2 | 2026-11-09 | done | `scripts/check_tools.sh` (versions of iverilog/vvp/python3/RISC-V GCC/ARM GCC plus the `rv32im/ilp32` multilib, exit 1 when anything is missing) and `docs/tools.md` (apt, xPack and no-root Icarus install commands; verified `-march=rv32im -mabi=ilp32` bare and newlib links). |
+| T0.3 | 2026-11-09 | done | `scripts/get_freedoom.sh` fetches Freedoom into git-ignored `data/` and prints size + SHA-256. Tested end to end: latest tag resolved from the `releases/latest` redirect (the GitHub API returned 403, rate-limited, so it is not used), zip download, extraction via `python3`'s `zipfile` (no `unzip` dependency), re-run skips work, `--force` re-extracts. Data used: **Freedoom 0.13.0**, `freedoom1.wad` 28,795,076 B, `sha256 7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d`. |
 
 ## Plan deviations
 
